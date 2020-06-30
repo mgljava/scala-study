@@ -1,4 +1,4 @@
-package com.github.mgljava.func
+package com.github.mgljava.base
 
 import java.util.Date
 
@@ -179,18 +179,3 @@ object FunctionTest {
     println(curriedFunc(1, 2)(39, 4))
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
