@@ -58,6 +58,7 @@ object CollectionsTest {
 
     /**
      * Map，与Java的Map一致
+     * map中每个元素就是二元组
      */
     println("------map-----")
     val maps = Map(1 -> "a", 2 -> "b", (3, "c"), (3, "d"))
@@ -80,15 +81,17 @@ object CollectionsTest {
      * tuple 最多支持22个元素
      */
     println("------tuple-------")
-    val tuple = Tuple5(1, 2, 'c', "aa", 20L)
-    val tuple1 = Tuple2("hello", "world")
-    println(tuple)
-    println(tuple1)
+    val tuple5 = Tuple5(1, 2, 'c', "aa", 20L)
+    val tuple2 = Tuple2("hello", "world")
+    println(tuple2.swap)
+    println(tuple5)
+    println("tuple index 3 : " + tuple5._3)
+    println(tuple2)
     // 遍历1 tuple
-    val iterator = tuple.productIterator
+    val iterator = tuple5.productIterator
     iterator.foreach(println)
     // 遍历2 tuple
-    val iterator1 = tuple.productIterator
+    val iterator1 = tuple5.productIterator
     while (iterator1.hasNext) {
       println(iterator1.next())
     }
