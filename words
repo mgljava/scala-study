@@ -1,0 +1,90 @@
+/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/bin/java -javaagent:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=52280:/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_231.jdk/Contents/Home/lib/tools.jar:/Users/monk/Code/IdeaProjects/github/scala-study/out/production/scala-study:/Users/monk/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.7.jar:/Users/monk/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.7.jar:/Users/monk/.ivy2/cache/org.scala-lang/scala-library/srcs/scala-library-2.10.7-sources.jar:/Users/monk/Code/IdeaProjects/github/scala-study/lib/scala-actors.jar:/Users/monk/Desktop/Study/Video/尚硅谷大数据/03_第三阶段  spark体系之分布式计算/01_scala分布式计算机开发语言/资料/spark-assembly-1.6.0-hadoop2.6.0.jar com.github.mgljava.wc.ScalaWordCount
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+20/06/30 22:47:32 INFO SparkContext: Running Spark version 1.6.0
+20/06/30 22:47:33 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+20/06/30 22:47:33 WARN Utils: Your hostname, Monk-MacBook-Pro.local resolves to a loopback address: 127.0.0.1; using 192.168.0.102 instead (on interface en0)
+20/06/30 22:47:33 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+20/06/30 22:47:33 INFO SecurityManager: Changing view acls to: monk
+20/06/30 22:47:33 INFO SecurityManager: Changing modify acls to: monk
+20/06/30 22:47:33 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(monk); users with modify permissions: Set(monk)
+20/06/30 22:47:33 INFO Utils: Successfully started service 'sparkDriver' on port 52294.
+20/06/30 22:47:33 INFO Slf4jLogger: Slf4jLogger started
+20/06/30 22:47:33 INFO Remoting: Starting remoting
+20/06/30 22:47:34 INFO Remoting: Remoting started; listening on addresses :[akka.tcp://sparkDriverActorSystem@192.168.0.102:52299]
+20/06/30 22:47:34 INFO Utils: Successfully started service 'sparkDriverActorSystem' on port 52299.
+20/06/30 22:47:34 INFO SparkEnv: Registering MapOutputTracker
+20/06/30 22:47:34 INFO SparkEnv: Registering BlockManagerMaster
+20/06/30 22:47:34 INFO DiskBlockManager: Created local directory at /private/var/folders/0h/r37dyc6n4gx6bd63jpt5v94c0000gn/T/blockmgr-37a79539-646d-4bf3-9712-3c91c0b70dfc
+20/06/30 22:47:34 INFO MemoryStore: MemoryStore started with capacity 2.4 GB
+20/06/30 22:47:34 INFO SparkEnv: Registering OutputCommitCoordinator
+20/06/30 22:47:34 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+20/06/30 22:47:34 INFO SparkUI: Started SparkUI at http://192.168.0.102:4040
+20/06/30 22:47:34 INFO Executor: Starting executor ID driver on host localhost
+20/06/30 22:47:34 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 52302.
+20/06/30 22:47:34 INFO NettyBlockTransferService: Server created on 52302
+20/06/30 22:47:34 INFO BlockManagerMaster: Trying to register BlockManager
+20/06/30 22:47:34 INFO BlockManagerMasterEndpoint: Registering block manager localhost:52302 with 2.4 GB RAM, BlockManagerId(driver, localhost, 52302)
+20/06/30 22:47:34 INFO BlockManagerMaster: Registered BlockManager
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 127.4 KB, free 127.4 KB)
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 141.3 KB)
+20/06/30 22:47:35 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on localhost:52302 (size: 13.9 KB, free: 2.4 GB)
+20/06/30 22:47:35 INFO SparkContext: Created broadcast 0 from textFile at ScalaWordCount.scala:11
+20/06/30 22:47:35 INFO FileInputFormat: Total input paths to process : 1
+20/06/30 22:47:35 INFO SparkContext: Starting job: foreach at ScalaWordCount.scala:26
+20/06/30 22:47:35 INFO DAGScheduler: Registering RDD 3 (map at ScalaWordCount.scala:16)
+20/06/30 22:47:35 INFO DAGScheduler: Got job 0 (foreach at ScalaWordCount.scala:26) with 1 output partitions
+20/06/30 22:47:35 INFO DAGScheduler: Final stage: ResultStage 1 (foreach at ScalaWordCount.scala:26)
+20/06/30 22:47:35 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 0)
+20/06/30 22:47:35 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 0)
+20/06/30 22:47:35 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[3] at map at ScalaWordCount.scala:16), which has no missing parents
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 4.1 KB, free 145.4 KB)
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.3 KB, free 147.7 KB)
+20/06/30 22:47:35 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on localhost:52302 (size: 2.3 KB, free: 2.4 GB)
+20/06/30 22:47:35 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1006
+20/06/30 22:47:35 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[3] at map at ScalaWordCount.scala:16)
+20/06/30 22:47:35 INFO TaskSchedulerImpl: Adding task set 0.0 with 1 tasks
+20/06/30 22:47:35 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0, localhost, partition 0,PROCESS_LOCAL, 2150 bytes)
+20/06/30 22:47:35 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+20/06/30 22:47:35 INFO HadoopRDD: Input split: file:/Users/monk/Code/IdeaProjects/github/scala-study/words:0+5
+20/06/30 22:47:35 INFO deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+20/06/30 22:47:35 INFO deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+20/06/30 22:47:35 INFO deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+20/06/30 22:47:35 INFO deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+20/06/30 22:47:35 INFO deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+20/06/30 22:47:35 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2253 bytes result sent to driver
+20/06/30 22:47:35 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 87 ms on localhost (1/1)
+20/06/30 22:47:35 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+20/06/30 22:47:35 INFO DAGScheduler: ShuffleMapStage 0 (map at ScalaWordCount.scala:16) finished in 0.098 s
+20/06/30 22:47:35 INFO DAGScheduler: looking for newly runnable stages
+20/06/30 22:47:35 INFO DAGScheduler: running: Set()
+20/06/30 22:47:35 INFO DAGScheduler: waiting: Set(ResultStage 1)
+20/06/30 22:47:35 INFO DAGScheduler: failed: Set()
+20/06/30 22:47:35 INFO DAGScheduler: Submitting ResultStage 1 (ShuffledRDD[4] at reduceByKey at ScalaWordCount.scala:23), which has no missing parents
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 2.5 KB, free 150.2 KB)
+20/06/30 22:47:35 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 1595.0 B, free 151.7 KB)
+20/06/30 22:47:35 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on localhost:52302 (size: 1595.0 B, free: 2.4 GB)
+20/06/30 22:47:35 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1006
+20/06/30 22:47:35 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 1 (ShuffledRDD[4] at reduceByKey at ScalaWordCount.scala:23)
+20/06/30 22:47:35 INFO TaskSchedulerImpl: Adding task set 1.0 with 1 tasks
+20/06/30 22:47:35 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 1, localhost, partition 0,NODE_LOCAL, 1894 bytes)
+20/06/30 22:47:35 INFO Executor: Running task 0.0 in stage 1.0 (TID 1)
+20/06/30 22:47:35 INFO ShuffleBlockFetcherIterator: Getting 1 non-empty blocks out of 1 blocks
+20/06/30 22:47:35 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 2 ms
+(hello,1)
+20/06/30 22:47:35 INFO Executor: Finished task 0.0 in stage 1.0 (TID 1). 1165 bytes result sent to driver
+20/06/30 22:47:35 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 1) in 26 ms on localhost (1/1)
+20/06/30 22:47:35 INFO DAGScheduler: ResultStage 1 (foreach at ScalaWordCount.scala:26) finished in 0.026 s
+20/06/30 22:47:35 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+20/06/30 22:47:35 INFO DAGScheduler: Job 0 finished: foreach at ScalaWordCount.scala:26, took 0.207290 s
+20/06/30 22:47:35 INFO SparkUI: Stopped Spark web UI at http://192.168.0.102:4040
+20/06/30 22:47:35 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+20/06/30 22:47:35 INFO MemoryStore: MemoryStore cleared
+20/06/30 22:47:35 INFO BlockManager: BlockManager stopped
+20/06/30 22:47:35 INFO BlockManagerMaster: BlockManagerMaster stopped
+20/06/30 22:47:35 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+20/06/30 22:47:35 INFO SparkContext: Successfully stopped SparkContext
+20/06/30 22:47:35 INFO ShutdownHookManager: Shutdown hook called
+20/06/30 22:47:35 INFO ShutdownHookManager: Deleting directory /private/var/folders/0h/r37dyc6n4gx6bd63jpt5v94c0000gn/T/spark-5a93aad8-5018-4afe-ac36-9be87062d6ca
+20/06/30 22:47:35 INFO RemoteActorRefProvider$RemotingTerminator: Shutting down remote daemon.
+
+Process finished with exit code 0
