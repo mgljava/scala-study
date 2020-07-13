@@ -39,5 +39,25 @@ object Chapter2Test {
       n -= 1 // 如果最后一行语句为赋值动作，那么不返回值
     }
     println("result: " + result) // result: ()
+
+    // 输入输出
+    // val name = readLine("Your Name is : ")
+    // print("Your Age is : ")
+    // val age = readInt()
+    printf("hello my name is %s, my age is %d", "name", 20)
+
+    println()
+    // 循环
+    var n = 10
+    while (n > 0) {
+      print(n + ", ")
+      n -= 1
+    }
+    println()
+
+    for (i <- 1 to 10) {
+      print(i + ", ")
+    }
+    println()
   }
 }
