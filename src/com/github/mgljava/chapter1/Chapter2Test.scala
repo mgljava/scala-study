@@ -59,5 +59,33 @@ object Chapter2Test {
       print(i + ", ")
     }
     println()
+
+    // 遍历字符序列
+    var sum = 0
+    for (ch <- "Hello") {
+      sum += ch
+    }
+    println("sum: " + sum)
+
+    // 高级for循环
+    for (i <- 1 to 3; j <- 1 to 3)
+      print((10 * i) + j + " ") // 11 12 13 21 22 23 31 32 33 相当于双层for循环
+
+    println()
+    for (i <- 1 to 3; j <- 1 to 3 if i != j)
+      print((10 * i) + j + " ") // 12 13 21 23 31 32
+    println()
+
+    // for 推导式
+    val ints = for (i <- 1 to 10) yield i % 3
+    println("ints: " + ints) // ints: Vector(1, 2, 0, 1, 2, 0, 1, 2, 0, 1)
+
+    val strs = for (c <- "Hello"; i <- 0 to 1) yield (c + i).toChar
+    println("strs: " + strs)
+    /*val strs2 = for(c <- "hello"; i <- 1 until  2) {
+      println(c)
+      println((c + i).toChar)
+    }*/
+
   }
 }
