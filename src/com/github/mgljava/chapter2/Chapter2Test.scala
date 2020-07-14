@@ -1,5 +1,9 @@
 package com.github.mgljava.chapter2
 
+import java.io.IOException
+import java.net.MalformedURLException
+import java.sql.SQLException
+
 import scala.math.sqrt
 
 object Chapter2Test {
@@ -87,5 +91,43 @@ object Chapter2Test {
       println((c + i).toChar)
     }*/
 
+    box("hello world")
+
+    println(lazyValue(path = "/Users/monk/Code/IdeaProjects/github/scala-study/words"))
+  }
+
+  // 过程：如果函数体包含在花括号当中但没有前面的 = 号，那么返回类型就是Unit
+  def box(s: String): Unit = {
+    val border = "-" * s.length + "--\n"
+    println(border + "|" + s + "|\n" + border)
+  }
+
+  // 懒值, 只有在第一次使用的时候才会被初始化，对于那种开销较大的初始化语句而言非常有用
+  def lazyValue(path: String): String = {
+    lazy val words = scala.io.Source.fromFile(path).mkString
+
+    // words被定义时即被取值
+    val words1 = scala.io.Source.fromFile(path).mkString
+
+    // 在words被首次使用时取值
+    lazy val words2 = scala.io.Source.fromFile(path).mkString
+
+    // 在每一次words被使用时取值
+    def words3 = scala.io.Source.fromFile(path).mkString
+
+    words
+  }
+
+  def exceptionHandler(): Unit = {
+    try {
+      // throw exception
+    } catch {
+      // 模式匹配
+      case sqlException: SQLException => println("sql exception")
+      case _: MalformedURLException => println("Bad URL")
+      case ex: IOException => ex.printStackTrace()
+    } finally {
+      // 释放资源
+    }
   }
 }
