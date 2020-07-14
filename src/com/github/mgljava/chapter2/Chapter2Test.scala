@@ -1,6 +1,6 @@
-package com.github.mgljava.chapter1
+package com.github.mgljava.chapter2
 
-import scala.math._
+import scala.math.sqrt
 
 object Chapter2Test {
   def main(args: Array[String]): Unit = {
