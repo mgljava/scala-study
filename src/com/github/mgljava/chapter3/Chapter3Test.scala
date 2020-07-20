@@ -61,8 +61,20 @@ object Chapter3Test {
 
 
     val bb = Array(9, 23, 54, -2, 32, -6, -4, -12, 90)
-    // 移除第一个负数之外的所有负数
+    // 如果要使用sum方法，元素类型必须是整数类型：整形，浮点数，BigInteger/BigDecimal
+    val sum = bb.sum
+    println(sum)
+    println("min: " + bb.min + ", max: " + bb.max)
 
+    scala.util.Sorting.quickSort(bb)
+    println("quickSort: " + bb.toBuffer)
+
+    val i = bb.count(_ > 0)
+    println("i > 0 count: " + i)
+
+    // 多维数组
+    val array3 = Array.ofDim[Int](3, 4)
+    array3(2)(3) = 1
   }
 
   def printArray(name: String, array: Array[Int]): Unit = {
